@@ -1,0 +1,145 @@
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+    }
+    .modal-rating {
+      background-color: #242832;
+      padding: 20px;
+      color: #ffffff;
+      font-family: sans-serif;
+      max-width: 350px;
+      width: 95%;
+      border-left: 10px solid #fb7711;
+      border-radius: 25px 10px 10px 25px;
+    
+      position: relative;
+      margin-top: 20px;
+    }
+    .modal-rating .overlay {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      /*background-color: #fb7711;*/
+      border-radius: 10px;
+      transform: translate(-5px, 5px);
+    }
+    
+    .modal-rating i {
+      color: #fb7711;
+      background-color: #888;
+      padding: 10px;
+      border-radius: 50%;
+    }
+    
+    .modal-rating h2 {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+    
+    .modal-rating p {
+      font-size: 13px;
+      color: #eeeeee;
+    }
+    
+    .modal-rating .rating {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+    }
+    .modal-rating .rating input[type="radio"] {
+      display: none;
+    }
+    .modal-rating .rating label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1em;
+      height: 1em;
+      padding: 17px;
+      font-size: 17px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    
+      color: #a4a9b2;
+      background-color: #26303b;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .modal-rating .rating label:hover {
+      background-color: #7c8897;
+      color: #ffffff;
+    }
+    .modal-rating .rating input:checked + label {
+      background-color: #fb7711;
+      color: #ffffff;
+    }
+    
+    .modal-rating button[type="submit"] {
+      background-color: #fb7711;
+      color: #ffffff;
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 99px;
+      border: 0px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+    .modal-rating button[type="submit"]:hover {
+      color: #fb7711;
+      background-color: #ffffff;
+    }
+
+    #logo img{
+      padding: 5px; 
+      width:120px; 
+      float:right; 
+      position:absolute;
+    }
+    
+    @media (min-width: 280px) and (max-width: 380px) {
+      .modal-rating{
+        margin-top: 80px;
+        width: 90%;
+      }
+      #logo{
+        display: flex;
+        justify-content: center;
+      }
+      .modal-rating .rating label {
+        padding: 15px;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+  }
+
+  @media screen and (max-width: 660px) {
+    .modal-rating{
+      margin-top: 80px;
+      width: 90%;
+    }
+    #logo{
+      display: flex;
+      justify-content: center;
+    }
+    #logo a{
+      display: flex;
+    justify-content: center;
+    }
+  }
+
+
+  .red{
+    background-color: red;
+  }
